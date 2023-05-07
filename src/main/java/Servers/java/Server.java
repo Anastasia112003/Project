@@ -59,7 +59,7 @@ class ServerWork implements Runnable {
                     log.log(userName + " вышел из чата", path);
                     send(userName + " вышел из чата");
                     Server.clients.remove(client);
-                    break;
+                     System.exit(0);
                 }
             } catch (IOException ex) {
                 log.log(ex.getMessage(), path);
