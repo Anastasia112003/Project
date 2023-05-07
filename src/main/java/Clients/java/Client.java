@@ -74,7 +74,7 @@ public class Client {
                     str = in.readLine();
                     if (str.equals("/exit")) {
                         log.log(str, path);
-                        break;
+                         System.exit(0);
                     }
                     System.out.println(str);
                     log.log(str, path);
@@ -94,7 +94,7 @@ public class Client {
                 String userMsg;
                 userMsg = scanner.nextLine();
                 if (userMsg.equals("/exit"))
-                    break;
+                     System.exit(0);
                 else {
                     out.println(userMsg);
                 }
